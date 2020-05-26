@@ -1,0 +1,33 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'blogapp/style.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+        <title>Django Djournal</title>
+
+        <div class="page-header">
+            <h1><a href="">Django Djournal</a></h1>
+        </div>
+    </head>
+
+    <body>
+        <div class="post-container">
+            {% if post_list %}
+                <ul>
+                    {% for post in post_list %}
+                        <h3><a href="{% url 'blogapp:display_post' post.url%}">{{ post.title }}</a></h3>
+                        {{ post.preview | safe }}
+                        <a href="{% url 'blogapp:display_post' post.url%}">Read more...</a>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No post available.</p>
+            {% endif %}
+        </div>
+    </body>
+</html>

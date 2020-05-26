@@ -1,0 +1,105 @@
+h1 { font-size: 36pt; }
+h2 { font-size: 24pt; }
+h3 { font-size: 18pt; }
+h4 { font-size: 12pt; }
+ul { list-style: none; padding-left: 0; }​
+input, label { display:block; }
+
+.page-header
+{
+	background-color: dodgerblue;
+	margin-top: 0;
+	padding: 10px 20px 10px 20px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active
+{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+}
+
+.post-container a
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+	color: dodgerblue;
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+}
+
+.post-container h1,
+.post-container h1 a,
+.post-container h1 a:visited,
+.post-container h1 a:active,
+.post-container h2,
+.post-container h2 a,
+.post-container h2 a:visited,
+.post-container h2 a:active,
+.post-container h3,
+.post-container h3 a,
+.post-container h3 a:visited,
+.post-container h3 a:active
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+	color: dodgerblue;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+}
+
+.post-container
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+}
+
+.code-snippet
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	border-left: 6px solid;
+	border-color: lightskyblue;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	white-space: pre-wrap;
+
+	font-family: 'Roboto Mono', monospace;
+	font-size: 10pt;
+	color: dimgray;
+}
+
+.terminal-snippet
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	border-left: 6px solid;
+	border-color: lightgreen;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	white-space: pre-wrap;
+
+	font-family: 'Roboto Mono', monospace;
+	font-size: 10pt;
+	color: dimgray;
+}
