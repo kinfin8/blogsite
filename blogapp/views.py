@@ -12,6 +12,20 @@ def display_index(request):
         {'post_list': post_list}
     )
 
+def display_archive(request):
+    post_list = Post.objects.order_by('-created')
+    return render(
+        request,
+        "blogapp/archive.html",
+        {'post_list': post_list}
+    )
+
+def display_about(request):
+    return render(
+        request,
+        "blogapp/about.html"
+    )
+
 def display_post(request, post_url):
     post = get_object_or_404(Post, url=post_url)
     return render(

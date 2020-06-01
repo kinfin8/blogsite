@@ -12,6 +12,28 @@ input, label { display:block; }
 	padding: 10px 20px 10px 20px;
 }
 
+.page-menu
+{
+	border-bottom: 1px solid;
+	border-color: dodgerblue;
+
+	margin-top: 0;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.page-menu a,
+.page-menu a:visited,
+.page-menu a:active
+{
+	margin-left: 20px;
+
+	color: dodgerblue;
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+}
+
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,

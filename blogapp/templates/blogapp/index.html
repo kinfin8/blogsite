@@ -13,6 +13,12 @@
         <div class="page-header">
             <h1><a href="">Django Djournal</a></h1>
         </div>
+
+        <div class="page-menu">
+            <a href="{% url 'blogapp:display_index' %}">Home</a>
+            <a href="{% url 'blogapp:display_archive' %}">Archive</a>
+            <a href="{% url 'blogapp:display_about' %}">About</a>
+        </div>
     </head>
 
     <body>
